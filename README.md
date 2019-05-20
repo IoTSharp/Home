@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+## Welcome  IoTSharp Home page 
 
-You can use the [editor on GitHub](https://github.com/IoTSharp/www.iotsharp.net/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+IoTSharp is an open-source IoT platform for data collection, processing, visualization, and device management.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Document  https://docs.iotsharp.io
 
-### Markdown
+## Current progress of the project
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The Web UI interface has not yet been developed, so after deployment, only the API and Swagger interface, there is no other content. If you are interested in developing a Web version of the UI, you can join the  <https://github.com/IoTSharp/IoTSharp.ClientApp> 
 
-```markdown
-Syntax highlighted code block
+If you like the desktop version of the interface, you can join the  <https://github.com/IoTSharp/Cicada> 
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+ 
+## Features 
 
-1. Numbered
-2. List
+* Account, user, device, asset management
+* Properties, telemetry data display, and editing
+* Collect and visualize data
+* RPC capabilities
+* Process and React
+* Rule Engine
+* Scheduler
+* Reporting
+* Widgets  desinger
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/IoTSharp/www.iotsharp.net/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
