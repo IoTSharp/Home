@@ -6,10 +6,7 @@ IoTSharp is an open-source IoT platform for data collection, processing, visuali
 
 ## Current progress of the project
 
-The Web UI interface has not yet been developed, so after deployment, only the API and Swagger interface, there is no other content. If you are interested in developing a Web version of the UI, you can join the  <https://github.com/IoTSharp/IoTSharp.ClientApp> 
-
-If you like the desktop version of the interface, you can join the  <https://github.com/IoTSharp/Cicada> 
-
+The Web UI interface has not yet been developed, so after deployment, only the API and Swagger interface, there is no other content. If you are interested in developing a Web version of the UI, you can join the  <https://github.com/IoTSharp/IoTSharp/tree/master/ClientApp> 
 
  
 ## Features 
