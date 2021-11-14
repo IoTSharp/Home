@@ -1,8 +1,6 @@
 <template>
-  <div class="iotsharp-banner" data-vide-bg="mp4: https://s3-us-west-1.amazonaws.com/tb-videos/tb-cover2.mp4,
-                       webm: https://s3-us-west-1.amazonaws.com/tb-videos/tb-cover2.webm,
-                       ogv: https://s3-us-west-1.amazonaws.com/tb-videos/tb-cover2.ogv,
-                       poster: /video/tb-cover.jpg"
+  <div class="iotsharp-banner" data-vide-bg="mp4: ~images/iotsharp.mp4,                  
+                       poster: ~images/img.png"
        data-vide-options="bgColor: #000000, loop: true, muted: true, posterType: jpg">
     <div class="video-cover"></div>
     <div class="content">
@@ -39,7 +37,7 @@ export default {
       top: 0;
       z-index: -2;
       left: 0;
-      background-image: url("assets/images/img.png");
+      background-image: url("~images/img.png");
     }
     .arrow {
       position: absolute;

@@ -2,36 +2,19 @@
   <div class="iotsharp-dashboard">
     <div class="main-top"></div>
     <div class="content">
-      <h3>支持五种脚本和动态表达式的规则链</h3>
+      <h3>数字孪生</h3>
       <p> </p>
       <a-carousel arrows>
         <div class="block">
           <div class="img-box">
-            <img src="~images/example.png" alt="">
+            <img src="~images/1.png" alt="">
           </div>
           <div class="des">
-            <h2>支持三处规则链挂载点</h2>
-            <p>你可以通过规则链的各种脚本在未知的mqtt topic 和属性、遥测数据入库时进行规则处理，以触发预警事件并推送预警结果等。 </p>
+            <h2>设备管理</h2>
+            <p> 你可以随时点开设备查看实时变化的遥测数据、规则链绑定、以及修改和增加服务侧的熟悉或者查看设备侧熟悉 </p>
           </div>
         </div>
-        <div class="block">
-          <div class="img-box">
-            <img src="~images/example.png" alt="">
-          </div>
-          <div class="des">
-            <h2>透传</h2>
-            <p>通过规则链的TaskAction以实现透传设备数据处理</p>
-          </div>
-        </div>
-        <div class="block">
-          <div class="img-box">
-            <img src="~images/example.png" alt="">
-          </div>
-          <div class="des">
-            <h2>TaskAction</h2>
-            <p>通过TaskAction可以实现丰富的预警和特殊处理、入发送邮件、发送短信、发送rpc控制等.</p>
-          </div>
-        </div>
+        
       </a-carousel>
     </div>
   </div>

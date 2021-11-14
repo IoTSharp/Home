@@ -8,12 +8,12 @@
         <p>利用租户管理， 你可以为您的客户建立IoTSharp的私有云， 无需租用额外的服务器，一套系统负担所有客户。而不是一对一浪费更多资源。</p>
       </div>
       <div class="img-box">
-        <img src="~images/example.png" alt="">
+        <img src="~images/7.png" alt="">
       </div>
     </div>
     <div class="block">
       <div class="img-box">
-        <img src="~images/example.png" alt="">
+        <img src="~images/7.png" alt="">
       </div>
       <div class="des">
         <h2>资产管理（未来）</h2>
@@ -26,12 +26,12 @@
         <p>未来， IoTSharp 将引入ML.net 利用遥测数据提供基于时序的预测，这意味着我们可以为你的资产提供更多的数据参考。</p>
       </div>
       <div class="img-box">
-        <img src="~images/example.png" alt="">
+        <img src="~images/4.png" alt="">
       </div>
     </div>
     <div class="block">
       <div class="img-box">
-        <img src="~images/example.png" alt="">
+        <img src="~images/8.png" alt="">
       </div>
       <div class="des">
         <h2>事件和订阅</h2>
