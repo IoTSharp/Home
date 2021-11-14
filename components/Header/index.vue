@@ -5,10 +5,10 @@
       <div class="title">IoTSharp</div>
       <div class="container-tag">
         <a-tag>
-          <a href="https://twitter.com/nuxt_js" target="_blank">
+          <a href="https://github.com/IoTSharp/IoTSharp" target="_blank">
             <a-icon type="github" />
             <span>Star</span>
-            <span class="number">129</span>
+            <span class="number">301</span>
           </a>
         </a-tag>
       </div>
