@@ -1,6 +1,7 @@
-# iotsharp-ssr
+# IoTSharp 网站首页
 
-## Build Setup
+
+## How to build and  setup?
 
 ```bash
 # install dependencies
