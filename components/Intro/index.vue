@@ -1,8 +1,10 @@
 <template>
-  <div class="iotsharp-intro">
-    <h1>IoTSharp is an open-source IoT platform for data collection, processing, visualization, and device management</h1>
-    <h1 class="second">It enables device connectivity via industry standard IoT protocols - MQTT, CoAP and HTTP and supports both cloud and on-premises deployments. IoTSharp combines scalability, fault-tolerance and performance so you will never lose your data.</h1>
-  </div>
+  <section id="intro">
+    <main>
+      <h1>IoTSharp is an open-source IoT platform for data collection, processing, visualization, and device management</h1>
+      <h1 class="second">It enables device connectivity via industry standard IoT protocols - MQTT, CoAP and HTTP and supports both cloud and on-premises deployments. IoTSharp combines scalability, fault-tolerance and performance so you will never lose your data.</h1>
+    </main>
+  </section>
 </template>
 
 <script>
