@@ -5,7 +5,7 @@
         <div>
           <h1 class="header-animation tb-title">IoTSharp</h1>
           <h1 class="header-animation tb-title">Open-source IoT Platform</h1>
-          <h4 class="header-animation tb-sub-title">设备管理、数据手机、处理和可视化你的IoT解决方案</h4>
+          <h4 class="header-animation tb-sub-title">设备管理、数据存储和处理以及可视化你的IoT解决方案</h4>
         </div>
       </div>
     </main>

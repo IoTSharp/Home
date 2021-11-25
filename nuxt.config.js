@@ -2,14 +2,14 @@ import { resolve } from 'path'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'iotsharp-ssr',
+    title: 'IoTSharp Home',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'IoTSharp is an open-source IoT platform for data collection, processing, visualization, and device management' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
