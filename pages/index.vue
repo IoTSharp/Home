@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <div id="overflow">
-      <Header></Header>
+<!--      <Header></Header>-->
       <Banner></Banner>
       <Intro></Intro>
       <Manage></Manage>
