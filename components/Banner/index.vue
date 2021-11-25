@@ -26,6 +26,9 @@ export default {
   background-image: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0.6)), url("~images/banner.jpg")!important;
   background-position: 50% 50%;
   display: flex;
+  #hero-content {
+    background-color: transparent!important;
+  }
   main {
     margin: 0 auto;
   }
