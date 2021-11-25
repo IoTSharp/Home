@@ -22,8 +22,6 @@
         <div class="block vis">
           <div class="visualize">
             <img src="~images/7.png" class="vis1" alt="">
-            <img src="~images/7.png" class="vis2" alt="">
-            <img src="~images/7.png" class="vis3" alt="">
           </div>
           <div class="feature-des">
             <h2>资产管理（未来）</h2>
