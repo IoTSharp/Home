@@ -18,6 +18,7 @@ export default {
   },
   alias: {
     'images': resolve(__dirname, './assets/images'),
+    'icons': resolve(__dirname, './assets/icons'),
     'style': resolve(__dirname, './assets/style'),
     'data': resolve(__dirname, './assets/other/data')
   },
