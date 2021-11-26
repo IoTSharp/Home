@@ -14,7 +14,7 @@
       <h3>IoTSharp Features</h3>
       <div id="cards" class="row">
         <a-row :gutter="40">
-          <a-col :span="12">
+          <a-col :span="12" :xs="24" :sm="24" :md="24" :lg="12" :xl="12" :xxl="12">
             <div class="block">
               <img src="~images/user.png" />
               <div>
@@ -23,7 +23,7 @@
               </div>
             </div>
           </a-col>
-          <a-col :span="12">
+          <a-col :span="12" :xs="24" :sm="24" :md="24" :lg="12" :xl="12" :xxl="12">
             <div class="block">
               <img src="~images/rule.png" />
               <div>
@@ -32,7 +32,7 @@
               </div>
             </div>
           </a-col>
-          <a-col :span="12">
+          <a-col :span="12" :xs="24" :sm="24" :md="24" :lg="12" :xl="12" :xxl="12">
             <div class="block">
               <img src="~images/net.png" />
               <div>
@@ -41,7 +41,7 @@
               </div>
             </div>
           </a-col>
-          <a-col :span="12">
+          <a-col :span="12" :xs="24" :sm="24" :md="24" :lg="12" :xl="12" :xxl="12">
             <div class="block">
               <img src="~images/plantform.png" />
               <div>
@@ -50,7 +50,7 @@
               </div>
             </div>
           </a-col>
-          <a-col :span="12">
+          <a-col :span="12" :xs="24" :sm="24" :md="24" :lg="12" :xl="12" :xxl="12">
             <div class="block">
               <img src="~images/security.png" />
               <div>
@@ -60,7 +60,7 @@
               </div>
             </div>
           </a-col>
-          <a-col :span="12">
+          <a-col :span="12" :xs="24" :sm="24" :md="24" :lg="12" :xl="12" :xxl="12">
             <div class="block">
               <img src="~images/database.png" />
               <div>
