@@ -3,7 +3,7 @@
   
   https://iotsharp.io 
   
-  https://www.iotsharp.net
+  https://iotsharp.net
  
  
 ## 如何构建?
