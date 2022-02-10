@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "ant-design-vue": "^1.7.6",
@@ -14,6 +15,7 @@
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
+    "push-dir": "^0.4.1",
     "sass": "^1.43.4",
     "sass-loader": "10"
   }
