@@ -25,7 +25,7 @@
       data-vide-bg="mp4: ~images/iotsharp.mp4"
       data-vide-options="bgColor: #000000, loop: true, muted: true, posterType: jpg">
       <div style="position: absolute; z-index: -1; inset: 0px; overflow: hidden; background-size: cover; background-color: rgb(0, 0, 0); background-repeat: no-repeat; background-position: 50% 50%; background-image: none;">
-        <video autoplay="" loop="" preload="auto" muted="" style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1;" class="md-opjjpmhoiojifppkkcdabiobhakljdgm">
+        <video autoplay="" loop="" preload="auto" muted="" style="height: 100%; margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1;" class="md-opjjpmhoiojifppkkcdabiobhakljdgm">
           <source src="~images/iotsharp.mp4" type="video/mp4" class="md-opjjpmhoiojifppkkcdabiobhakljdgm">
           Your browser does not support the video tag.
         </video>
