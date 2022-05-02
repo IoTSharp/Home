@@ -3,20 +3,11 @@
     <header>
       <div class="logo-burger">
         <a href="/" class="logo"></a>
-        <!--      <span>IoTSharp</span>-->
       </div>
-      <nav class="head-menu">
-        <ul>
-          <li class="nav-products" data-submenu-id="nav-products">
-            <a href="https://docs.iotsharp.net" target="_blank">文档</a>
-          </li>
-          <li class="nav-services" data-submenu-id="nav-services">
-            <a href="https://github.com/IoTSharp/IoTSharp" target="_blank">源码</a>
-          </li>
-        </ul>
-      </nav>
       <div class="btn-operation">
-        <a href="https://github.com/IoTSharp/IoTSharp" target="_blank" class="n-button try">Try it now</a>
+        <a href="https://cloud.iotsharp.net/" target="_blank" class="n-button try">Try it now</a>
+        <a href="https://docs.iotsharp.io" target="_blank" class="n-button try">Docs </a>
+        <a href="https://github.com/IoTSharp/" target="_blank" class="n-button try">GitHub</a>
       </div>
     </header>
     <section
@@ -25,7 +16,7 @@
       data-vide-bg="mp4: ~images/iotsharp.mp4"
       data-vide-options="bgColor: #000000, loop: true, muted: true, posterType: jpg">
       <div style="position: absolute; z-index: -1; inset: 0px; overflow: hidden; background-size: cover; background-color: rgb(0, 0, 0); background-repeat: no-repeat; background-position: 50% 50%; background-image: none;">
-        <video autoplay="" loop="" preload="auto" muted="" style="height: 100%; margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1;" class="md-opjjpmhoiojifppkkcdabiobhakljdgm">
+        <video autoplay="" loop="" preload="auto" muted="" style="height: 100%;weight:100% margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1;" class="md-opjjpmhoiojifppkkcdabiobhakljdgm">
           <source src="~images/iotsharp.mp4" type="video/mp4" class="md-opjjpmhoiojifppkkcdabiobhakljdgm">
           Your browser does not support the video tag.
         </video>
@@ -42,8 +33,8 @@
 
 <script>
 export default {
-  name: "index"
-}
+  name: "index",
+};
 </script>
 
 <style lang="scss" scoped>
@@ -55,13 +46,17 @@ export default {
 .btn-operation {
   width: 200px;
 }
-header, #thingsboard-paas header, #thingsboard-pe header, #trendz header, #thingsboard-edge header {
+header,
+#thingsboard-paas header,
+#thingsboard-pe header,
+#trendz header,
+#thingsboard-edge header {
   background-color: unset;
   box-shadow: unset;
 }
 
 .logo {
-  background-image: url("~images/logo.png")!important;
+  background-image: url("~images/logo.png") !important;
 }
 
 @media screen and (min-width: 750px) {
@@ -71,7 +66,8 @@ header, #thingsboard-paas header, #thingsboard-pe header, #trendz header, #thing
 }
 
 @media screen and (min-width: 750px) {
-  section, header {
+  section,
+  header {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -88,7 +84,7 @@ header {
   top: 0;
   padding: 0 40px;
   left: 0;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   z-index: 8888;
   box-shadow: 0 0 20px rgb(0 0 0 / 10%), 0 0 40px rgb(0 0 0 / 10%);
   background-color: #fff;
@@ -108,7 +104,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: rgba(0,0,0,.72);
+    background-color: rgba(0, 0, 0, 0.72);
   }
   .video-cover {
     position: absolute;
@@ -127,10 +123,10 @@ header {
     margin: 0 auto;
   }
   .tb-title {
-    color: #ffffff!important;
+    color: #ffffff !important;
   }
   .tb-sub-title {
-    color: #ffffff!important;
+    color: #ffffff !important;
   }
 }
 </style>

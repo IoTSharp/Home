@@ -1,6 +1,6 @@
 {
-  "name": "iotshar_home",
-  "version": "1.0.0",
+  "name": "iotsharp_home",
+  "version": "1.0.3",
   "private": true,
   "scripts": {
     "dev": "nuxt",
