@@ -13,7 +13,7 @@
             <div class="dashboard-item slick-slide slick-cloned">
               <div class="item-description">
                 <h2>设备管理</h2>
-                <p>你可以随时点开设备查看实时变化的遥测数据、规则链绑定、以及修改和增加服务侧的熟悉或者查看设备侧熟悉</p>
+                <p>你可以随时点开设备查看实时变化的遥测数据、规则链绑定、以及修改和增加服务侧的属性或者查看设备侧属性</p>
               </div>
               <div class="item-image-container">
                 <img src="~images/1.png" alt="" class="item-image">
