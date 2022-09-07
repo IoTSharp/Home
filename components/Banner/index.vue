@@ -2,7 +2,7 @@
   <div class="banner">
     <header>
       <div class="logo-burger">
-        <a href="/" class="logo"></a>
+<!--        <a href="/" class="logo"></a>-->
       </div>
       <div class="btn-operation">
         <a href="https://cloud.iotsharp.net/" target="_blank" class="n-button try">Try it now</a>
@@ -16,7 +16,7 @@
       data-vide-bg="mp4: ~images/iotsharp.mp4"
       data-vide-options="bgColor: #000000, loop: true, muted: true, posterType: jpg">
       <div style="position: absolute; z-index: -1; inset: 0px; overflow: hidden; background-size: cover; background-color: rgb(0, 0, 0); background-repeat: no-repeat; background-position: 50% 50%; background-image: none;">
-        <video autoplay="" loop="" preload="auto" muted="" style="height: 100%;weight:100% margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1;" class="md-opjjpmhoiojifppkkcdabiobhakljdgm">
+        <video autoplay="" loop="" preload="auto" muted="" style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1;" class="md-opjjpmhoiojifppkkcdabiobhakljdgm">
           <source src="~images/iotsharp.mp4" type="video/mp4" class="md-opjjpmhoiojifppkkcdabiobhakljdgm">
           Your browser does not support the video tag.
         </video>
@@ -43,9 +43,7 @@ export default {
   position: relative;
   overflow: hidden;
 }
-.btn-operation {
-  width: 200px;
-}
+
 header,
 #thingsboard-paas header,
 #thingsboard-pe header,
@@ -53,6 +51,7 @@ header,
 #thingsboard-edge header {
   background-color: unset;
   box-shadow: unset;
+  overflow: hidden;
 }
 
 .logo {
@@ -66,8 +65,7 @@ header,
 }
 
 @media screen and (min-width: 750px) {
-  section,
-  header {
+  section {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -75,14 +73,12 @@ header,
 @media screen and (max-width: 1500px) {
   header {
     margin: unset;
-    width: 100%;
   }
 }
 
 header {
   position: absolute;
   top: 0;
-  padding: 0 40px;
   left: 0;
   transition-duration: 0.3s;
   z-index: 8888;
@@ -128,5 +124,9 @@ header {
   .tb-sub-title {
     color: #ffffff !important;
   }
+}
+
+video {
+  object-fit: fill;
 }
 </style>
