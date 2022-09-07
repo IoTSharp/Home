@@ -9,7 +9,7 @@
           <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
           <script>LA.init({id: "1D0sA3dgTCO49Les",ck: "1D0sA3dgTCO49Les"})</script> 
          
-          <a href="http://www.beian.miit.gov.cn/"> 冀ICP备18039206号</a>
+          <a href="https://beian.miit.gov.cn/"> 冀ICP备18039206号</a>
         </div>
         <div class="social">
           <a href="https://github.com/IoTSharp/IoTSharp" class="github">
