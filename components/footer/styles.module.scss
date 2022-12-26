@@ -1,0 +1,91 @@
+.footer {
+  padding: 70px 145px;
+  background-color: #1f1f1f;
+
+  .topArea {
+    display: flex;
+    justify-content: space-between;
+
+    .footerTitle {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 36px;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .linkListArea {
+      display: flex;
+
+      .linkArea {
+        display: flex;
+        flex-direction: column;
+        margin-left: 160px;
+
+        .title {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #ffffff;
+          margin-bottom: 40px;
+        }
+
+        .links {
+          display: flex;
+          flex-direction: column;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+
+          .link {
+            color: #ffffff;
+            cursor: pointer;
+            margin-bottom: 24px;
+          }
+
+          .disabled {
+            color: #666;
+            cursor: not-allowed;
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottomArea {
+    display: flex;
+    justify-content: space-between;
+
+    .codeArea {
+      display: flex;
+      flex-direction: column;
+
+      .text {
+        color: #ffffff;
+      }
+    }
+
+    .numArea {
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+
+      span {
+        margin-bottom: 12px;
+      }
+
+      .publicLogo {
+        display: flex;
+
+        .logo {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
