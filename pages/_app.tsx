@@ -11,10 +11,10 @@ const MyApp = (data: AppProps & ILayoutProps) => {
   return (
     <div>
       <Head>
-        <title>A Demo for 《深入浅出SSR官网开发指南》</title>
+        <title>IoTSharp</title>
         <meta
           name="description"
-          content="A Demo for 《深入浅出SSR官网开发指南》"
+          content="IoTSharp"
         />
         <link rel="icon" href="/favicon.ico"/>
       </Head>
