@@ -1,0 +1,50 @@
+.banner {
+  height: 100vh;
+  width: 100%;
+  padding: 0 100px;
+  background: url("/img.png");
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .container {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    .subTitle {
+      font-size: 20px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 5px;
+      }
+    }
+    .title {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 66px;
+      color: #fdfeff;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 20px;
+      line-height: 32px;
+      color: #fdfeff;
+      margin-top: 35px;
+    }
+    .button {
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 500;
+      display: inline-block;
+      max-width: 200px;
+      padding: 12px 10px;
+      line-height: 22px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid #ffffff;
+      margin-top: 40px;
+    }
+  }
+}

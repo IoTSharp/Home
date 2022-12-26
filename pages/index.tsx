@@ -1,4 +1,5 @@
 import type {NextPage} from "next";
+import { IBannerProps, Banner } from "@/components/banner";
 import styles from "./index.module.scss";
 
 interface IProps {
@@ -15,30 +16,7 @@ const Home: NextPage<IProps> = ({title, description, list}) => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>{title}</h1>
-
-        <p className={styles.description}>{description}</p>
-
-        <div className={styles.grid}>
-          {list?.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className={styles.card}
-                onClick={(): void => {
-                  window.open(
-                    item.link,
-                    "blank",
-                    "noopener=yes,noreferrer=yes"
-                  );
-                }}
-              >
-                <h2>{item.label} &rarr;</h2>
-                <p>{item.info}</p>
-              </div>
-            );
-          })}
-        </div>
+        <Banner />
       </main>
     </div>
   );
