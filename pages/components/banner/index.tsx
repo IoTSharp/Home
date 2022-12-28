@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 import bannerIcon from "@/public/banner.svg";
 import IoTIcon from "@/public/iot.svg";
+import logoText from "@/public/logo-text.svg";
 
 export interface IBannerProps {
 }
@@ -12,7 +13,7 @@ export const Banner: FC<IBannerProps> = ({}) => {
     <div className={styles.banner}>
       <div className={styles.container}>
         <div className={styles.subTitle}><Image src={IoTIcon} alt="" width={30} height={30}/>Internet of Things</div>
-        <div className={styles.title}>IoTSharp</div>
+        <div className={styles.title}><Image src={logoText} alt="" width={260} height={60}/></div>
         <div className={styles.title}>开源物联网平台</div>
         <div className={styles.description}>设备管理、数据存储和处理以及可视化你的IoT解决方案</div>
         <div className={styles.button}>快速上手</div>

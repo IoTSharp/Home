@@ -1,0 +1,38 @@
+.contributorsContainer {
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 5rem;
+  padding: 3.125rem 5.625rem 3.125rem 0;
+  background: var(--yellow-color);
+  border-radius: 0 126px 126px 0;
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    left: -300px;
+    top: 0;
+    background: var(--yellow-color);
+  }
+  .row {
+    margin-left: -200px;
+  }
+  .title {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: .5px;
+  }
+  img {
+    width: 100%;
+  }
+  .description {
+    font-size: 0.875rem;
+    line-height: 1.56rem;
+    letter-spacing: .15px;
+  }
+}

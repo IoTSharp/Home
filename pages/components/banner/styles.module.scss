@@ -11,14 +11,13 @@
   .container {
     display: flex;
     flex-direction: column;
-    color: #ffffff;
 
     .subTitle {
       font-size: 1.25rem;
-      margin-bottom: .5rem;
+      margin-bottom: .7rem;
       display: flex;
       align-items: center;
-
+      color: #ffffff;
       img {
         margin-right: .313rem;
       }
@@ -26,9 +25,9 @@
     .title {
       font-weight: 700;
       font-size: 3.5rem;
-      line-height: 4.125rem;
+      line-height: 4rem;
       color: #fdfeff;
-      margin-bottom: .625rem;
+      margin-bottom: .5rem;
     }
     .description {
       font-size: 1.25rem;
@@ -47,7 +46,8 @@
       text-align: center;
       text-decoration: none;
       cursor: pointer;
-      border: 2px solid #ffffff;
+      border: 2px solid var(--yellow-color);
+      background-color: var(--yellow-color);
       margin-top: 2.5rem;
     }
   }
