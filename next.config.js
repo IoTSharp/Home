@@ -1,7 +1,8 @@
-/** @type {import('next').NextConfig} */
 const path = require("path");
 
-module.exports = {
+const semi = require("@douyinfe/semi-next").default({});
+
+module.exports = semi({
   reactStrictMode: true,
   swcMinify: true,
   webpack: (config) => {
@@ -11,4 +12,7 @@ module.exports = {
     };
     return config;
   },
-};
+  images: {
+    domains: ["127.0.0.1"],
+  },
+});

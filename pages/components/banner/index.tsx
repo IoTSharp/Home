@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 import bannerIcon from "@/public/banner.svg";
 import IoTIcon from "@/public/iot.svg";
+
 export interface IBannerProps {
 }
 

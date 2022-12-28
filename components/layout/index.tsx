@@ -1,6 +1,6 @@
 import {FC} from "react";
-import {Footer, IFooterProps} from "../footer";
-import {INavBarProps, NavBar} from "../navbar";
+import {Footer, IFooterProps} from "../footer/index";
+import {INavBarProps, NavBar} from "../navbar/index";
 import styles from "./styles.module.scss";
 
 export interface ILayoutProps {

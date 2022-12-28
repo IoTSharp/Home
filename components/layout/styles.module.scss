@@ -1,5 +1,7 @@
 .layout {
+  background-color: var(--primary-background-color);
+
   .main {
-    min-height: calc(100vh - 560px);
+    min-height: calc(100vh - 34.85rem);
   }
 }
