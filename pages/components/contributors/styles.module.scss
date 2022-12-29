@@ -4,7 +4,8 @@
   justify-content: space-between;
   width: 60%;
   margin-bottom: 5rem;
-  padding: 3.125rem 5.625rem 3.125rem 0;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
   background: var(--yellow-color);
   border-radius: 0 126px 126px 0;
   position: relative;
@@ -12,14 +13,14 @@
     display: block;
     content: "";
     height: 100%;
-    width: 300px;
+    width: 800px;
     position: absolute;
-    left: -300px;
+    left: -800px;
     top: 0;
     background: var(--yellow-color);
   }
   .row {
-    margin-left: -200px;
+    margin-left: -100px;
   }
   .title {
     font-size: 1rem;

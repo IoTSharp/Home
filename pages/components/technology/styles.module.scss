@@ -32,15 +32,23 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    box-shadow: 0 2px 1.25rem 0 var(--box-shadow);
+    box-shadow: 0 2px .1rem 0 var(--box-shadow);
     padding: 2rem 1.25rem;
+    transition: margin-top .5s;
     margin-bottom: 4rem;
+
+    &:hover {
+      margin-top: -1rem;
+      transition: margin-top .5s;
+    }
+
     .title {
       margin-bottom: 1rem;
       font-weight: 700;
       font-size: 1.5rem;
       line-height: 2.25rem;
     }
+
     .description {
       font-size: 1rem;
       font-weight: 400;

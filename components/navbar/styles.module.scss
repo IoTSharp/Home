@@ -13,6 +13,11 @@
   z-index: 100;
   box-sizing: border-box;
 
+  .icon {
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+
   a {
     display: flex;
     align-items: center;

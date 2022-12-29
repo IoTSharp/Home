@@ -7,8 +7,10 @@ import {getIsMobile, getIsSupportWebp} from '@/utils';
 import {ThemeContextProvider} from '@/stores/theme';
 import {UserAgentProvider} from '@/stores/userAgent';
 import {LanguageContextProvider} from '@/stores/language';
+import QRCode from '@/public/code.png';
 import './global.scss';
 import {isEmpty} from "lodash";
+import publicLogo from "@/public/public_logo.png";
 
 export interface IComponentProps {
   isMobile?: boolean;
@@ -99,16 +101,18 @@ MyApp.getInitialProps = async (context: AppContext) => {
           }
         },
         {
-          "title": "联系我",
+          "title": "联系我们",
           "links": {
             "data": [
               {
-                "label": "微信",
-                "link": {}
-              },
-              {
                 "label": "QQ",
-                "link": {}
+                "link": "https://jq.qq.com/?_wv=1027&k=u1ZzTmVd"
+              }, {
+                "label": "微博",
+                "link": "https://weibo.com/iotsharp"
+              }, {
+                "label": "Discord",
+                "link": "https://discord.com/invite/My6PaTmUvu"
               }
             ]
           }
@@ -130,7 +134,7 @@ MyApp.getInitialProps = async (context: AppContext) => {
         })),
       })),
       qrCode: {
-        image: `${qr_code_image.data.url}`,
+        image: QRCode,
         text: qr_code,
       },
       copyRight: copy_right,

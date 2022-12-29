@@ -1,6 +1,5 @@
 import {FC} from "react";
-import { Col, Row } from '@douyinfe/semi-ui';
-import Image from "next/image";
+import {Col, Row} from '@douyinfe/semi-ui';
 import styles from "./styles.module.scss";
 
 export interface IContributorsProps {
@@ -9,7 +8,7 @@ export interface IContributorsProps {
 export const Contributors: FC<IContributorsProps> = ({}) => {
   return (
     <div className={styles.contributorsContainer}>
-      <Row className={styles.row}>
+      <Row className={styles.row} type="flex" align="middle">
         <Col span={7}>
           <div className={styles.title}>参与建设</div>
           <div className={styles.description}>很多小伙伴在和我们一同建设 IoTSharp，如果你有兴趣，欢迎加入我们 。</div>

@@ -1,17 +1,143 @@
+@mixin initStatus {
+  transform: translate3d(0, 2.5rem, 0);
+  opacity: 0;
+}
+
+@mixin finalStatus {
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(.8);
+  }
+
+  14% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInDown1 {
+  0% {
+    @include initStatus;
+  }
+
+  28% {
+    @include initStatus;
+  }
+
+  100% {
+    @include finalStatus;
+  }
+}
+
+@keyframes fadeInDown2 {
+  0% {
+    @include initStatus;
+  }
+
+  42% {
+    @include initStatus;
+  }
+
+  100% {
+    @include finalStatus;
+  }
+}
+
+@keyframes fadeInDown3 {
+  0% {
+    @include initStatus;
+  }
+
+  56% {
+    @include initStatus;
+  }
+
+  100% {
+    @include finalStatus;
+  }
+}
+
+@keyframes fadeInDown4 {
+  0% {
+    @include initStatus;
+  }
+
+  70% {
+    @include initStatus;
+  }
+
+  100% {
+    @include finalStatus;
+  }
+}
+
+@keyframes fadeInDown5 {
+  0% {
+    @include initStatus;
+  }
+
+  84% {
+    @include initStatus;
+  }
+
+  100% {
+    @include finalStatus;
+  }
+}
+
+.withAnimation {
+  .subTitle {
+    animation: fadeInDown1 1.3s;
+  }
+
+  .title {
+    animation: fadeInDown2 1.3s;
+  }
+
+  .label {
+    animation: fadeInDown3 1.3s;
+  }
+
+  .description {
+    animation: fadeInDown4 1.3s;
+  }
+
+  .button {
+    animation: fadeInDown5 1.3s;
+  }
+
+  .icon {
+    animation: fadeInScale 1.5s;
+  }
+}
+
 .banner {
-  height: 90vh;
   width: 100%;
-  padding: 0 8rem;
+  padding: 12rem 8rem;
   background: url("/img.png");
   background-size: 100% 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+  :global {
+    .semi-row-flex {
+      height: 100%;
+    }
+  }
+  .icon {
+    width: 100%;
+  }
   .container {
     display: flex;
     flex-direction: column;
-
     .subTitle {
       font-size: 1.25rem;
       margin-bottom: .7rem;
@@ -22,23 +148,33 @@
         margin-right: .313rem;
       }
     }
+
     .title {
       font-weight: 700;
-      font-size: 3.5rem;
+      font-size: 3rem;
       line-height: 4rem;
       color: #fdfeff;
-      margin-bottom: .5rem;
     }
+
+    .label {
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      color: #fdfeff;
+    }
+
     .description {
       font-size: 1.25rem;
       line-height: 2rem;
       color: #fdfeff;
-      margin-top: 2.188rem;
+      margin-top: 1.6rem;
     }
+
     .button {
       border-radius: 1.563rem;
       font-size: 1rem;
       font-weight: 500;
+      margin-bottom: 2rem;
       display: inline-block;
       max-width: 12.5rem;
       padding: .75rem .625rem;
@@ -48,7 +184,7 @@
       cursor: pointer;
       border: 2px solid var(--yellow-color);
       background-color: var(--yellow-color);
-      margin-top: 2.5rem;
+      margin-top: 2rem;
     }
   }
 }

@@ -88,7 +88,13 @@ export const Footer: FC<IFooterProps> = ({
         <div className={styles.numArea}>
           <span>{copyRight}</span>
           <span>{siteNumber}</span>
-          <div className={styles.publicLogo}>
+          <div className={styles.publicLogo} onClick={(): void => {
+            window.open(
+              "https://beian.miit.gov.cn/",
+              "blank",
+              "noopener=yes,noreferrer=yes"
+            );
+          }}>
             <div className={styles.logo}>
               <Image
                 src={publicLogo}
