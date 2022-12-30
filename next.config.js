@@ -14,5 +14,6 @@ module.exports = semi({
   },
   images: {
     domains: ["127.0.0.1"],
+    unoptimized: true
   },
 });
