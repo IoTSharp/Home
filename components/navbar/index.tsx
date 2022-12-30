@@ -17,7 +17,7 @@ export const NavBar: FC<INavBarProps> = ({}) => {
   const iconTheme = theme === Themes.light ? <IconMoon size="extra-large"/> : <IconSun size="extra-large"/>;
   return (
     <div className={styles.navBar}>
-      <a href="/">
+      <a href="https://iotsharp.io/">
         <Image src={logoIcon} alt="" width={35} height={35}/>
         <Image src={icon} alt="" width={135} height={40}/>
       </a>
