@@ -11,7 +11,7 @@ import styles from "./styles.module.scss";
 export interface IPlatformProps {
 }
 
-export const Platform: FC<IPlatformProps> = ({}) => {
+const Platform: FC<IPlatformProps> = ({}) => {
   const popupRef = useRef<IPopupRef>(null);
   const [currentImage, setCurrentImage] = useState(null)
   const Options = [{
@@ -62,3 +62,5 @@ export const Platform: FC<IPlatformProps> = ({}) => {
     </div>
   );
 };
+
+export default Platform;

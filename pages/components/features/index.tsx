@@ -9,7 +9,7 @@ import InformationIcon from "@/public/information.svg";
 export interface IFeaturesProps {
 }
 
-export const Features: FC<IFeaturesProps> = ({}) => {
+const Features: FC<IFeaturesProps> = ({}) => {
   const Options = [{
     icon: SafetyIcon,
     title: '安全'
@@ -41,3 +41,5 @@ export const Features: FC<IFeaturesProps> = ({}) => {
     </div>
   );
 };
+
+export default Features;

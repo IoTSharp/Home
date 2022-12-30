@@ -1,11 +1,11 @@
 import React, {useContext, useEffect, useRef} from 'react';
 import type {NextPage} from 'next';
 import styles from './index.module.scss';
-import {Banner} from "@/pages/components/banner";
-import {Technology} from "@/pages/components/technology";
-import {Features} from "@/pages/components/features";
-import {Platform} from "@/pages/components/platform";
-import {Contributors} from "@/pages/components/contributors";
+import Banner from "@/pages/components/banner";
+import Technology from "@/pages/components/technology";
+import Features from "@/pages/components/features";
+import Platform from "@/pages/components/platform";
+import Contributors from "@/pages/components/contributors";
 import cName from 'classnames';
 import {ThemeContext} from '@/stores/theme';
 import {IComponentProps} from './_app';

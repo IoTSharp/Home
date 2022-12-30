@@ -1,7 +1,8 @@
 import type {AppContext, AppProps} from 'next/app';
 import App from 'next/app';
 import React from 'react';
-import {ILayoutProps, Layout} from '@/components/layout';
+import type {ILayoutProps} from '@/components/layout';
+import Layout from '@/components/layout';
 import Head from 'next/head';
 import {getIsMobile, getIsSupportWebp} from '@/utils';
 import {ThemeContextProvider} from '@/stores/theme';

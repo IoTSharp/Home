@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 export interface ITechnologyProps {
 }
 
-export const Technology: FC<ITechnologyProps> = ({}) => {
+const Technology: FC<ITechnologyProps> = ({}) => {
   const Options = [{
     title: '数字孪生',
     description: '通过服务侧、客户端侧属性、遥测数据、RPC 等实现了数字孪生， 实现了所有设备统一接口提供给业务调用。',
@@ -45,3 +45,5 @@ export const Technology: FC<ITechnologyProps> = ({}) => {
     </div>
   );
 };
+
+export default Technology;

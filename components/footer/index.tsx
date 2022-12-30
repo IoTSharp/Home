@@ -28,7 +28,7 @@ export interface IFooterProps {
   publicNumber: string; // 公安备案号
 }
 
-export const Footer: FC<IFooterProps> = ({
+const Footer: FC<IFooterProps> = ({
                                            title,
                                            linkList,
                                            qrCode,
@@ -110,3 +110,5 @@ export const Footer: FC<IFooterProps> = ({
     </div>
   );
 };
+
+export default Footer;

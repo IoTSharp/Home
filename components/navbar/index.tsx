@@ -11,7 +11,7 @@ import {Themes} from "@/constants/enum";
 export interface INavBarProps {
 }
 
-export const NavBar: FC<INavBarProps> = ({}) => {
+const NavBar: FC<INavBarProps> = ({}) => {
   const {setTheme, theme} = useContext(ThemeContext);
   const icon = theme === Themes.light ? logoTextDark : logoText;
   const iconTheme = theme === Themes.light ? <IconMoon size="extra-large"/> : <IconSun size="extra-large"/>;
@@ -47,3 +47,5 @@ export const NavBar: FC<INavBarProps> = ({}) => {
     </div>
   );
 };
+
+export default NavBar;

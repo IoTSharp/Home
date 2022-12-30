@@ -1,6 +1,8 @@
 import {FC} from "react";
-import {Footer, IFooterProps} from "../footer/index";
-import {INavBarProps, NavBar} from "../navbar/index";
+import type {IFooterProps} from "../footer/index";
+import Footer from "../footer/index";
+import type {INavBarProps} from "../navbar/index";
+import NavBar from "../navbar/index";
 import styles from "./styles.module.scss";
 
 export interface ILayoutProps {
@@ -8,7 +10,7 @@ export interface ILayoutProps {
   footerData: IFooterProps;
 }
 
-export const Layout: FC<ILayoutProps & { children: JSX.Element }> = ({
+const Layout: FC<ILayoutProps & { children: JSX.Element }> = ({
                                                                        navbarData,
                                                                        footerData,
                                                                        children,
@@ -21,3 +23,5 @@ export const Layout: FC<ILayoutProps & { children: JSX.Element }> = ({
     </div>
   );
 };
+
+export default Layout;

@@ -11,7 +11,7 @@ import {ThemeContext} from "@/stores/theme";
 export interface IBannerProps {
 }
 
-export const Banner: FC<IBannerProps> = ({}) => {
+const Banner: FC<IBannerProps> = ({}) => {
   const mainRef = useRef<HTMLDivElement>(null);
   const {theme} = useContext(ThemeContext);
 
@@ -47,3 +47,5 @@ export const Banner: FC<IBannerProps> = ({}) => {
     </div>
   );
 };
+
+export default Banner;

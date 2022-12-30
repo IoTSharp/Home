@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 export interface IContributorsProps {
 }
 
-export const Contributors: FC<IContributorsProps> = ({}) => {
+const Contributors: FC<IContributorsProps> = ({}) => {
   return (
     <div className={styles.contributorsContainer}>
       <Row className={styles.row} type="flex" align="middle">
@@ -25,3 +25,5 @@ export const Contributors: FC<IContributorsProps> = ({}) => {
     </div>
   );
 };
+
+export default Contributors;
