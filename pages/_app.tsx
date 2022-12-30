@@ -8,7 +8,7 @@ import {getIsMobile, getIsSupportWebp} from '@/utils';
 import {ThemeContextProvider} from '@/stores/theme';
 import {UserAgentProvider} from '@/stores/userAgent';
 import {LanguageContextProvider} from '@/stores/language';
-import QRCode from '@/public/code.png';
+import QRCode from '@/public/code.jpg';
 import './global.scss';
 import {isEmpty} from "lodash";
 import publicLogo from "@/public/public_logo.png";
