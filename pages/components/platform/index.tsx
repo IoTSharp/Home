@@ -16,20 +16,25 @@ const Platform: FC<IPlatformProps> = ({}) => {
   const [currentImage, setCurrentImage] = useState(null)
   const Options = [{
     image: TenantImage,
-    title: '租户管理',
-    description: '您可以为您的客户建立私有云，无需租用额外的服务器，一套系统负担所有客户，而不是一对一浪费资源。'
+    title: '多租户',
+    description: '通过多租户，充分的利用系统资源为多个客户提供服务并确保数据彻底隔离。'
   }, {
     image: DeviceImage,
-    title: '设备管理',
-    description: '您可以随时点开设备查看实时变化的遥测数据、规则链绑定、以及修改和增加服务侧的属性或查看设备侧属性。'
+    title: '数字孪生',
+    description: '通过数字孪生使得设备的属性数据、遥测数据、数据清洗、告警更容易管理和使用'
   }, {
     image: RuleImage,
     title: '规则链引擎',
-    description: '您可以监视遥测数据、熟悉数据，并允许您使用规则链通过数字孪生控制远在千里之外的物联网资产。'
+    description: '通过规则链引擎利用多种语言脚本来扩展你对数据的分析和处理。'
   }, {
     image: ResourceImage,
-    title: '资产管理（未来）',
-    description: '未来，IoTSharp针对设备和网关管理的同时，更要针对无数个设备和规则链组成一套系统，这套系统可能是一栋大厦，也可能是一套产品系统。'
+    title: '资产管理',
+    description: '使用多个设备及其属性和遥测可抽象为资产更利于管理设备和数据分析。'
+  },
+  {
+    image: ResourceImage,
+    title: '产品管理',
+    description: '为设备或者网关提供简洁有效的数据模板、字典、认证、素材组织能力。'
   }]
   const viewImage = (image: any): void => {
     setCurrentImage(image)
