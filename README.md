@@ -9,18 +9,16 @@
 ## 如何构建?
 
 ```bash
-# install dependencies
-$ yarn install
+```
+npm install
+npm run dev
+```
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## 项目调试
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+```
+npm run debugger
+```
 ```
  
 ## 感谢
