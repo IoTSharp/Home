@@ -10,6 +10,8 @@ import cName from 'classnames';
 import {ThemeContext} from '@/stores/theme';
 import {IComponentProps} from './_app';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import NavBar from "@/components/navbar";
+import Footer from "@/components/footer";
 interface IProps {
 }
 
@@ -25,14 +27,18 @@ const Home: NextPage<IProps & IComponentProps> = ({}) => {
   }, [theme]);
 
   return (
-    <div className={styles.container}>
-      <main className={cName([styles.main, styles.withAnimation])} ref={mainRef}>
-        <Banner />
-        <Technology />
-        <Features />
-        <Platform />
-        <Contributors />
-      </main>
+    <div>
+      <NavBar />
+      <div className={styles.container}>
+        <main className={cName([styles.main, styles.withAnimation])} ref={mainRef}>
+          <Banner />
+          <Technology />
+          <Features />
+          <Platform />
+          <Contributors />
+        </main>
+      </div>
+      <Footer />
     </div>
   );
 };

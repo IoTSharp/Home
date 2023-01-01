@@ -1,9 +1,11 @@
-import {FC} from "react";
+import {FC, JSXElementConstructor, ReactElement, ReactFragment, ReactNode, ReactPortal} from "react";
 import Image from "next/image";
 import publicLogo from "@/public/public_logo.png";
 import styles from "./styles.module.scss";
 import cName from "classnames";
-
+import {isEmpty} from "lodash";
+import QRCode from "@/public/code.jpg";
+import { useTranslation } from 'next-i18next'
 interface ILink {
   label: string;
   link?: string;
@@ -19,34 +21,115 @@ interface IQRCode {
   text: string;
 }
 
-export interface IFooterProps {
-  title: string;
-  linkList: ILinkList[];
-  qrCode: IQRCode;
-  copyRight: string;
-  siteNumber: string; // 站点备案号
-  publicNumber: string; // 公安备案号
-}
+export interface IFooterProps {}
 
-const Footer: FC<IFooterProps> = ({
-                                           title,
-                                           linkList,
-                                           qrCode,
-                                           copyRight,
-                                           siteNumber,
-                                           publicNumber,
-                                         }) => {
+const Footer: FC<IFooterProps> = ({}) => {
+  const { t } = useTranslation('footer');
+  const data = {
+    "title": "IoTSharp",
+    "qr_code": "",
+    "copy_right": "Copyright © 2022 The IoTSharp Authors",
+    "site_number": "",
+    "public_number": "冀ICP备18039206号",
+    "qr_code_image": {
+      "data": {
+        "name": "code.png",
+        "alternativeText": "code.png",
+        "caption": "code.png",
+        "width": 56,
+        "height": 56,
+        "formats": {},
+        "hash": "code_67191e1aba",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": 1.45,
+        "url": "/uploads/code_67191e1aba.png",
+        "previewUrl": {},
+        "provider": "local",
+        "provider_metadata": {}
+      }
+    },
+    "link_lists": {
+      "data": [
+        {
+          "title": t('about'),
+          "links": {
+            "data": [
+              {
+                "label": "Demo",
+                "link": "http://demo.iotsharp.net/"
+              },
+              {
+                "label": "Docs",
+                "link": "https://docs.iotsharp.net/",
+              },
+            ]
+          }
+        },
+        {
+          "title": "了解更多",
+          "links": {
+            "data": [
+              {
+                "label": "Github",
+                "link": "https://github.com/IoTSharp"
+              },
+              {
+                "label": "Gitee",
+                "link": "https://gitee.com/IoTSharp"
+              },
+            ]
+          }
+        },
+        {
+          "title": "联系我们",
+          "links": {
+            "data": [
+              {
+                "label": "QQ",
+                "link": "https://jq.qq.com/?_wv=1027&k=u1ZzTmVd"
+              }, {
+                "label": "微博",
+                "link": "https://weibo.com/iotsharp"
+              }, {
+                "label": "Discord",
+                "link": "https://discord.com/invite/My6PaTmUvu"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+  const {copy_right, link_lists, public_number, qr_code, qr_code_image, site_number, title} = data || {};
+  const footerData = {
+    title,
+    linkList: link_lists?.data?.map((item: any) => ({
+      title: item.title,
+      list: item?.links?.data?.map((_item: any) => ({
+        label: _item.label,
+        link: isEmpty(_item.link) ? '' : _item.link,
+      })),
+    })),
+    qrCode: {
+      image: QRCode,
+      text: qr_code,
+    },
+    copyRight: copy_right,
+    siteNumber: site_number,
+    publicNumber: public_number,
+  }
   return (
     <div className={styles.footer}>
       <div className={styles.topArea}>
         <h1 className={styles.footerTitle}>{title}</h1>
         <div className={styles.linkListArea}>
-          {linkList?.map((item, index) => {
+          {footerData?.linkList?.map((item, index) => {
             return (
               <div className={styles.linkArea} key={`linkArea${index}`}>
                 <span className={styles.title}>{item.title}</span>
                 <div className={styles.links}>
-                  {item.list?.map((_item, _index) => {
+                  {item.list?.map((_item: { link: string | URL | undefined; label: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | Iterable<ReactNode> | null | undefined; }, _index: any) => {
                     return (
                       <div
                         className={cName({
@@ -77,17 +160,17 @@ const Footer: FC<IFooterProps> = ({
         <div className={styles.codeArea}>
           <div>
             <Image
-              src={qrCode?.image}
-              alt={qrCode?.text}
+              src={footerData?.qrCode?.image}
+              alt={footerData?.qrCode?.text}
               width={120}
               height={120}
             ></Image>
           </div>
-          <div className={styles.text}>{qrCode?.text}</div>
+          <div className={styles.text}>{footerData?.qrCode?.text}</div>
         </div>
         <div className={styles.numArea}>
-          <span>{copyRight}</span>
-          <span>{siteNumber}</span>
+          <span>{footerData?.copyRight}</span>
+          <span>{footerData?.siteNumber}</span>
           <div className={styles.publicLogo} onClick={(): void => {
             window.open(
               "https://beian.miit.gov.cn/",
@@ -98,12 +181,12 @@ const Footer: FC<IFooterProps> = ({
             <div className={styles.logo}>
               <Image
                 src={publicLogo}
-                alt={publicNumber}
+                alt={footerData?.publicNumber}
                 width={20}
                 height={20}
               ></Image>
             </div>
-            <span>{publicNumber}</span>
+            <span>{footerData?.publicNumber}</span>
           </div>
         </div>
       </div>

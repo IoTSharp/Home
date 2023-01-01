@@ -8,8 +8,7 @@ import IoTIcon from "@/public/iot.svg";
 import logoText from "@/public/logo-text.svg";
 import {ThemeContext} from "@/stores/theme";
 
-export interface IBannerProps {
-}
+export interface IBannerProps {}
 
 const Banner: FC<IBannerProps> = ({}) => {
   const mainRef = useRef<HTMLDivElement>(null);

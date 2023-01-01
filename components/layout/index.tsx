@@ -17,9 +17,7 @@ const Layout: FC<ILayoutProps & { children: JSX.Element }> = ({
                                                                      }) => {
   return (
     <div className={styles.layout}>
-      <NavBar {...navbarData} />
-      <main className={styles.main}>{children}</main>
-      <Footer {...footerData} />
+      {children}
     </div>
   );
 };
