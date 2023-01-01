@@ -11,7 +11,7 @@ import {LanguageContextProvider} from '@/stores/language';
 import QRCode from '@/public/code.jpg';
 import './global.scss';
 import {isEmpty} from "lodash";
-import publicLogo from "@/public/public_logo.png";
+import {appWithTranslation} from 'next-i18next'
 
 export interface IComponentProps {
   isMobile?: boolean;
@@ -20,7 +20,6 @@ export interface IComponentProps {
 
 const MyApp = (data: AppProps & ILayoutProps & IComponentProps): JSX.Element => {
   const {Component, pageProps, navbarData, footerData, isMobile, isSupportWebp} = data;
-
   return (
     <div>
       <Head>
@@ -147,4 +146,4 @@ MyApp.getInitialProps = async (context: AppContext) => {
   };
 };
 
-export default MyApp;
+export default appWithTranslation(MyApp);

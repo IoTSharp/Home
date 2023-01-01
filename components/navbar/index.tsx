@@ -1,4 +1,4 @@
-import {FC, useContext} from "react";
+import {FC, useContext, useEffect} from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 import logoIcon from "@/public/logo-icon.svg";
