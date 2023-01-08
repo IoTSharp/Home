@@ -8,10 +8,7 @@ import {getIsMobile, getIsSupportWebp} from '@/utils';
 import {ThemeContextProvider} from '@/stores/theme';
 import {UserAgentProvider} from '@/stores/userAgent';
 import {LanguageContextProvider} from '@/stores/language';
-import QRCode from '@/public/code.jpg';
 import './global.scss';
-import {isEmpty} from "lodash";
-import {appWithTranslation} from 'next-i18next'
 
 export interface IComponentProps {
   isMobile?: boolean;
@@ -52,4 +49,4 @@ MyApp.getInitialProps = async (context: AppContext) => {
   };
 };
 
-export default appWithTranslation(MyApp);
+export default MyApp;

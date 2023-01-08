@@ -5,7 +5,6 @@ import styles from "./styles.module.scss";
 import cName from "classnames";
 import {isEmpty} from "lodash";
 import QRCode from "@/public/code.jpg";
-import { useTranslation } from 'next-i18next'
 interface ILink {
   label: string;
   link?: string;
@@ -24,7 +23,6 @@ interface IQRCode {
 export interface IFooterProps {}
 
 const Footer: FC<IFooterProps> = ({}) => {
-  const { t } = useTranslation('footer');
   const data = {
     "title": "IoTSharp",
     "qr_code": "",
@@ -52,7 +50,7 @@ const Footer: FC<IFooterProps> = ({}) => {
     "link_lists": {
       "data": [
         {
-          "title": t('about'),
+          "title": '关于',
           "links": {
             "data": [
               {

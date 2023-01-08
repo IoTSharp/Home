@@ -9,7 +9,6 @@ import Contributors from "@/pages/components/contributors";
 import cName from 'classnames';
 import {ThemeContext} from '@/stores/theme';
 import {IComponentProps} from './_app';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 interface IProps {
@@ -44,9 +43,3 @@ const Home: NextPage<IProps & IComponentProps> = ({}) => {
 };
 
 export default Home;
-
-export const getStaticProps = async ({ locale }: { locale: string }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ['common', 'footer', 'header', 'main'])),
-  },
-});
