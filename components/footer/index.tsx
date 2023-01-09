@@ -26,7 +26,7 @@ const Footer: FC<IFooterProps> = ({}) => {
   const data = {
     "title": "IoTSharp",
     "qr_code": "",
-    "copy_right": "Copyright © 2022 The IoTSharp Authors",
+    "copy_right": "Copyright © 2023 The IoTSharp Authors",
     "site_number": "",
     "public_number": "冀ICP备18039206号",
     "qr_code_image": {
