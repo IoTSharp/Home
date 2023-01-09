@@ -15,6 +15,7 @@ interface IProps {
 }
 
 const Home: NextPage<IProps & IComponentProps> = ({}) => {
+
   const mainRef = useRef<HTMLDivElement>(null);
   const {theme} = useContext(ThemeContext);
 
