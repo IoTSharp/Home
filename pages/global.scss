@@ -18,6 +18,7 @@ html[data-theme="dark"] {
   --secondary-font-color-1: #9e9e9f;
   --popup-content-background-color: #1f1f1f;
   --box-shadow: rgba(255, 255, 255, 0.8);
+  --banner-icon: url("../public/banner_dark.png");
   --home-background-icon: url("../public/home_bg_dark.png");
   --home-background-icon-webp: url("../public/home_bg_dark.webp");
 }
@@ -36,6 +37,7 @@ html[data-theme="light"] {
   --semi-page-hover-background-color: rgb(244, 245, 245);
   --navbar-icon: url("../public/logo-text-dark.svg");
   --theme-icon: url("../public/theme_light.png");
+  --banner-icon: url("../public/banner_light.png");
   --popup-close-icon: url("../public/close_light.png");
   --popup-close-hover-background-color: #f5f5f5;
   --secondary-font-color-1: #333333;

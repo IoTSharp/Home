@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: hsla(0,0%,100%,.5);
+  background-color: var(--navbar-background-color);
   backdrop-filter: blur(0.5rem);
   border-bottom: 1px solid var(--semi-color-border);
   width: 100%;
