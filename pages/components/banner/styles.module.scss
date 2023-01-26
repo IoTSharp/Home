@@ -124,49 +124,41 @@
 
 .banner {
   width: 100%;
-  padding: 12rem 8rem;
-  background: url("/img.png");
-  background-size: 100% 100%;
+  padding: 10rem 8rem;
+  overflow: hidden;
+  border-bottom: 1px solid var(--semi-color-border);
   :global {
     .semi-row-flex {
       height: 100%;
     }
   }
   .icon {
-    width: 100%;
+    width: 920px;
+    position: relative;
+    border-radius: 8px;
+    height: 32.5rem!important;
+    border-bottom: 1px solid var(--semi-color-border);
+    background-image: var(--banner-icon);
+    background-size: 100% 100%;
   }
   .container {
     display: flex;
     flex-direction: column;
-    .subTitle {
-      font-size: 1.25rem;
-      margin-bottom: .7rem;
-      display: flex;
-      align-items: center;
-      color: #ffffff;
-      img {
-        margin-right: .313rem;
-      }
-    }
 
     .title {
       font-weight: 700;
-      font-size: 3rem;
+      font-size: 2.8rem;
       line-height: 4rem;
-      color: #fdfeff;
     }
 
     .label {
-      font-weight: 500;
       font-size: 1.8rem;
       line-height: 2rem;
-      color: #fdfeff;
     }
 
     .description {
       font-size: 1.25rem;
       line-height: 2rem;
-      color: #fdfeff;
       margin-top: 1.6rem;
     }
 
@@ -184,7 +176,41 @@
       cursor: pointer;
       border: 2px solid var(--yellow-color);
       background-color: var(--yellow-color);
-      margin-top: 2rem;
+      margin-top: 4rem;
+    }
+  }
+  .bannerImage {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  .background {
+    position: absolute;
+    width: 640px;
+    height: 640px;
+    left: -50px;
+    top: -20px;
+    -webkit-filter: blur(120px);
+    filter: blur(120px);
+    opacity: .6;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 474px;
+      height: 474px;
+      border-radius: 50%;
+      top: 132px;
+      background-color: rgb(var(--semi-purple-5));
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 474px;
+      height: 474px;
+      border-radius: 50%;
+      left: 166px;
+      background-color: rgb(var(--semi-indigo-5));
     }
   }
 }
