@@ -19,14 +19,17 @@ const Contributors: FC<IContributorsProps> = ({}) => {
         <Descriptions.Item itemKey="Download">1000+</Descriptions.Item>
         <Descriptions.Item itemKey="Contributors">30+</Descriptions.Item>
       </Descriptions>
-      <Row gutter={80}>
-        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-          <Image src={ContributorForQQ} alt="" width={90} height={90}/>
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-          <Image src={ContributorForWechat} alt="" width={90} height={90}/>
-        </Col>
-      </Row>
+      <div className={styles.imageBox}>
+        <Row type="flex" gutter={80}>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+            <Image src={ContributorForQQ} alt="" width={90} height={90}/>
+          </Col>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+            <Image src={ContributorForWechat} alt="" width={90} height={90}/>
+          </Col>
+        </Row>
+      </div>
+
     </div>
   );
 };

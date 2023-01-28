@@ -5,6 +5,10 @@
   flex-direction: column;
   width: 100%;
   padding: 10rem 8rem;
+  .imageBox {
+    width: 100%;
+    margin-top: 3rem;
+  }
   .title {
     font-size: 2rem;
     color: var(--semi-color-text-0);
@@ -24,7 +28,7 @@
   }
   img {
     width: 100%;
-    height: 23rem;
+    height: 25rem;
     border-radius: 8px;
   }
   :global {
@@ -32,15 +36,13 @@
       display: flex;
       width: 100%;
       align-items: center;
-      padding: 0 20px;
+      padding: 0 -20px;
     }
     .semi-row {
-      width: 100%;
       margin-top: 3rem;
     }
     .semi-descriptions table {
       width: 100%;
-      padding: 20px;
     }
     .semi-descriptions-double tbody {
       width: 100%;
