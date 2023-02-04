@@ -8,16 +8,16 @@ export interface ITechnologyProps {
 
 const Technology: FC<ITechnologyProps> = ({}) => {
   const Options = [{
-    title: '数字孪生',
-    description: '通过服务侧、客户端侧属性、遥测数据、RPC 等实现了数字孪生， 实现了所有设备统一接口提供给业务调用。',
+    title: '预测未来',
+    description: '利用ML.Net使用遥测数据训练时间序列预测模型让你对态势快人一步。',
     classGroup: [styles.item, styles.item3]
   }, {
     title: '规则链引擎',
-    description: '通过脚本处理数据并结合动态 Linq 表达式处理节点与节点之间的走向以实现数据清洗、告警、事件等相应手段。',
+    description: '通过脚本处理数据并结合动态表达式处理节点与节点之间的走向以实现数据清洗、告警。',
     classGroup: [styles.item, styles.item2]
   }, {
-    title: '中间件支持',
-    description: '支持如消息中间件 RabbitMQ、AmazonSQS，时序数据库 InfluxDB、TDengine，关系数据库 PostgreSQL等。',
+    title: '自主可控',
+    description: '针对国产CPU龙芯进行了完整的适配。为国产时序数据库TDengine做了最有力的生态支持。',
     classGroup: [styles.item, styles.item1]
   }]
   return (

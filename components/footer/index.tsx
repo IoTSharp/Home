@@ -59,7 +59,7 @@ const Footer: FC<IFooterProps> = ({}) => {
               },
               {
                 "label": "Docs",
-                "link": "https://docs.iotsharp.net/",
+                "link": "https://docs.iotsharp.io/",
               },
             ]
           }
