@@ -11,6 +11,7 @@ import {ThemeContext} from '@/stores/theme';
 import {IComponentProps} from './_app';
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
+
 interface IProps {
 }
 
@@ -28,17 +29,17 @@ const Home: NextPage<IProps & IComponentProps> = ({}) => {
 
   return (
     <div>
-      <NavBar />
+      <NavBar/>
       <div className={styles.container}>
         <main className={cName([styles.main, styles.withAnimation])} ref={mainRef}>
-          <Banner />
-          <Technology />
-          <Features />
-          <Platform />
-          <Contributors />
+          <Banner/>
+          <Technology/>
+          <Features/>
+          <Platform/>
+          <Contributors/>
         </main>
       </div>
-      <Footer />
+      <Footer/>
     </div>
   );
 };

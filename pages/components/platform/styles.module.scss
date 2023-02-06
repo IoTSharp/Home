@@ -1,6 +1,30 @@
 .platformContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  padding: 1rem 8rem 5rem;
+  padding: 10rem 8rem;
+
+  .title {
+    font-size: 2rem;
+    color: var(--semi-color-text-0);
+    font-weight: 600;
+    margin-top: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .subTitle {
+    font-size: 1.125rem;
+    color: var(--semi-color-text-0);
+    text-align: left;
+    vertical-align: top;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    margin-top: 0;
+  }
+
   .row {
     img {
       width: 100%;
@@ -15,13 +39,16 @@
         transition: .5s;
       }
     }
+
     .content {
       margin-top: 4rem;
+
       .title {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 2.125rem;
       }
+
       .line {
         height: 5px;
         width: 20rem;
@@ -29,6 +56,7 @@
         background-color: var(--yellow-color);
         margin: 1.25rem 0;
       }
+
       p {
         font-size: 1.25rem;
         letter-spacing: 0;

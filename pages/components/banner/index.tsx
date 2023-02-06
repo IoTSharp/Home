@@ -4,7 +4,8 @@ import {Col, Row} from '@douyinfe/semi-ui';
 import cName from "classnames";
 import {ThemeContext} from "@/stores/theme";
 
-export interface IBannerProps {}
+export interface IBannerProps {
+}
 
 const Banner: FC<IBannerProps> = ({}) => {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -34,7 +35,7 @@ const Banner: FC<IBannerProps> = ({}) => {
         </Col>
         <Col xs={24} sm={24} md={24} lg={14} xl={14} offset={2}>
           <div className={styles.bannerImage}>
-            <div className={styles.background} />
+            <div className={styles.background}/>
             <div className={styles.icon}/>
           </div>
         </Col>

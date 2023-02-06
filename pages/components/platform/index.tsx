@@ -1,7 +1,5 @@
-import {FC, useContext, useRef, useState} from "react";
-import {Col, Row} from '@douyinfe/semi-ui';
-import Image from "next/image";
-import {IPopupRef, Popup} from "@/components/popup";
+import {FC, useContext} from "react";
+import {Carousel} from '@douyinfe/semi-ui';
 import TenantImage from '@/public/img_9.png';
 import TenantImageDark from '@/public/img_10.png';
 import RuleImage from '@/public/img_6.png';
@@ -20,9 +18,7 @@ export interface IPlatformProps {
 }
 
 const Platform: FC<IPlatformProps> = ({}) => {
-  const {setTheme, theme} = useContext(ThemeContext);
-  const popupRef = useRef<IPopupRef>(null);
-  const [currentImage, setCurrentImage] = useState(null)
+  const {theme} = useContext(ThemeContext);
   const Options = [{
     image: theme === Themes.light ? TenantImage : TenantImageDark,
     title: '多租户',
@@ -40,39 +36,34 @@ const Platform: FC<IPlatformProps> = ({}) => {
     title: '资产管理',
     description: '使用多个设备及其属性和遥测可抽象为资产更利于管理设备和数据分析。'
   },
-  {
-    image: theme === Themes.light ? ProductImage : ProductImageDark,
-    title: '产品管理',
-    description: '为设备或者网关提供简洁有效的数据模板、字典、认证、素材组织能力。'
-  }]
-  const viewImage = (image: any): void => {
-    setCurrentImage(image)
-    popupRef.current?.open();
-  }
+    {
+      image: theme === Themes.light ? ProductImage : ProductImageDark,
+      title: '产品管理',
+      description: '为设备或者网关提供简洁有效的数据模板、字典、认证、素材组织能力。'
+    }]
+  const style = {
+    width: '100%',
+    height: '400px',
+  };
   return (
     <div className={styles.platformContainer}>
-      {
-        Options?.map((option, index) => {
-          return (
-            <Row type="flex" gutter={100} className={styles.row} key={index}>
-              <Col xs={24} sm={24} md={24} lg={12} xl={12} order={index % 2 == 0 ? 1 : 2}>
-                <Image src={option?.image} width={400} height={500} alt="" onClick={() => viewImage(option?.image)}/>
-              </Col>
-              <Col xs={24} sm={24} md={24} lg={12} xl={12} order={index % 2 == 0 ? 2 : 1}>
-                <div className={styles.content}>
-                  <div className={styles.title}>{option?.title}</div>
-                  <div className={styles.line}/>
-                  <p>{option?.description}</p>
+      <p className={styles.title}>打造现代 Web 应用</p>
+      <p className={styles.subTitle}>与现代操作系统、浏览器更贴近的设计语言</p>
+      <Carousel style={style} speed={1000} animation='fade' theme='dark' autoPlay={false} showIndicator={false}>
+        {
+          Options.map((option, index) => {
+            return (
+              <>
+                <div key={index} style={{backgroundSize: 'cover', backgroundImage: `url(${option.image})`}}/>
+                <div>
+                  <div>{option.title}</div>
+                  <div>{option.description}</div>
                 </div>
-              </Col>
-            </Row>
-          )
-        })
-      }
-      <Popup ref={popupRef}>
-        {/*// @ts-ignore*/}
-        <Image src={currentImage} width={1000} height={550} alt=""/>
-      </Popup>
+              </>
+            );
+          })
+        }
+      </Carousel>
     </div>
   );
 };
