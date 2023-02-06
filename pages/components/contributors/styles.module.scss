@@ -1,40 +1,55 @@
 .contributorsContainer {
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
-  margin-bottom: 5rem;
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
-  background: var(--yellow-color);
-  border-radius: 0 126px 126px 0;
-  position: relative;
-  &:before {
-    display: block;
-    content: "";
-    height: 100%;
-    width: 800px;
-    position: absolute;
-    left: -800px;
-    top: 0;
-    background: var(--yellow-color);
-  }
-  .row {
-    margin-left: -100px;
+  flex-direction: column;
+  width: 100%;
+  padding: 10rem 8rem;
+  .imageBox {
+    width: 100%;
+    margin-top: 3rem;
   }
   .title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 3.5rem;
-    letter-spacing: .5px;
+    font-size: 2rem;
+    color: var(--semi-color-text-0);
+    font-weight: 600;
+    margin-top: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .subTitle {
+    font-size: 1.125rem;
+    color: var(--semi-color-text-0);
+    text-align: left;
+    vertical-align: top;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    margin-top: 0;
   }
   img {
     width: 100%;
+    height: 25rem;
+    border-radius: 8px;
   }
-  .description {
-    font-size: 1rem;
-    line-height: 1.56rem;
-    letter-spacing: .15px;
+  :global {
+    .semi-descriptions {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding: 0 -20px;
+    }
+    .semi-row {
+      margin-top: 3rem;
+    }
+    .semi-descriptions table {
+      width: 100%;
+    }
+    .semi-descriptions-double tbody {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .semi-descriptions-value {
+      color: rgb(var(--semi-purple-5));
+    }
   }
 }
