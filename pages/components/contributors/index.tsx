@@ -75,6 +75,7 @@ const Contributors: FC<IContributorsProps> = ({}) => {
                 </Col>
               )
             })
+          }
         </Row>
       </div>
     </div>
