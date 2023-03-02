@@ -38,10 +38,10 @@ const Contributors: FC<IContributorsProps> = ({}) => {
       <p className={styles.title}>与用户共同成长</p>
       <p className={styles.subTitle}>IoTSharp 重视我们的用户，加入并助力我们不断完善</p>
       <Descriptions align="center" size="large" row>
-        <Descriptions.Item itemKey="Stars">600+</Descriptions.Item>
-        <Descriptions.Item itemKey="Fork">150+</Descriptions.Item>
-        <Descriptions.Item itemKey="Download">180+</Descriptions.Item>
-        <Descriptions.Item itemKey="Contributors">30+</Descriptions.Item>
+        <Descriptions.Item itemKey="Stars">1800++</Descriptions.Item>
+        <Descriptions.Item itemKey="Fork">600+</Descriptions.Item>
+        <Descriptions.Item itemKey="Download">3400+</Descriptions.Item>
+        <Descriptions.Item itemKey="Contributors">15+</Descriptions.Item>
       </Descriptions>
       <div className={styles.imageBox}>
         <Row gutter={32} type="flex" align="top">

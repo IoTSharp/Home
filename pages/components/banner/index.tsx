@@ -22,7 +22,7 @@ const Banner: FC<IBannerProps> = ({}) => {
         <Col xs={24} sm={24} md={24} lg={8} xl={8}>
           <div className={styles.container}>
             <div className={styles.title}>连接物理设备与数字世界</div>
-            <div className={styles.description}>基于.Net 6.0 使用C#开发的数据采集、数据清洗、数据可视化与设备资产管理的开源物联网(IoT)基础服务平台。</div>
+            <div className={styles.description}>IoTSharp 是一个开源的物联网基础平台，集设备属性数据管理、遥测数据监测、RPC多模式远程控制、规则链设计引擎等强大能力，依据数字孪生概念将可见与不可见的物理设备统一孪生到数字世界，在落地上IoTSharp结合了资产管理、产品化发展的理念，让平台应用更加贴合复杂的应用场景，在协议支持上支持HTTP、MQTT 、CoAp 等多种标准物联网协议接入和非标协议的转换。</div>
             <div className={styles.button} onClick={(): void => {
               window.open(
                 "https://docs.iotsharp.net/",
