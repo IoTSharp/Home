@@ -2,6 +2,7 @@
   width: 100%;
   background: #1f1f1f;
   padding: 2rem 8rem;
+
   .titleContainer {
     display: flex;
     flex-direction: column;
@@ -29,13 +30,16 @@
       line-height: .5rem;
     }
   }
+
   .list {
     margin-top: 3rem;
+
     .item {
       display: flex;
       align-items: center;
       flex-direction: column;
       margin-bottom: 3rem;
+
       .title {
         margin-top: 1rem;
         font-weight: 700;

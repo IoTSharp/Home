@@ -127,20 +127,23 @@
   padding: 10rem 8rem;
   overflow: hidden;
   border-bottom: 1px solid var(--semi-color-border);
+
   :global {
     .semi-row-flex {
       height: 100%;
     }
   }
+
   .icon {
     width: 920px;
     position: relative;
     border-radius: 8px;
-    height: 32.5rem!important;
+    height: 32.5rem !important;
     border-bottom: 1px solid var(--semi-color-border);
     background-image: var(--banner-icon);
     background-size: 100% 100%;
   }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -179,12 +182,14 @@
       margin-top: 4rem;
     }
   }
+
   .bannerImage {
     position: relative;
     width: 100%;
     padding-top: 20px;
     padding-left: 50px;
   }
+
   .background {
     position: absolute;
     width: 640px;
@@ -194,6 +199,7 @@
     -webkit-filter: blur(120px);
     filter: blur(120px);
     opacity: .6;
+
     &:before {
       content: "";
       position: absolute;
@@ -203,6 +209,7 @@
       top: 132px;
       background-color: rgb(var(--semi-purple-5));
     }
+
     &:after {
       content: "";
       position: absolute;

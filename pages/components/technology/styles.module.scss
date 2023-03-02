@@ -1,15 +1,18 @@
 .technologyContainer {
   width: 100%;
   padding: 4rem 8rem 2rem;
+
   .titleContainer {
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
+
     h2 {
       font-size: 2rem;
       letter-spacing: .0125rem;
       line-height: 1rem;
     }
+
     .line {
       height: 5px;
       width: 20rem;
@@ -17,6 +20,7 @@
       background-color: var(--yellow-color);
       margin: 1.25rem 0;
     }
+
     h3 {
       color: var(--secondary-font-color-1);
       font-size: 1.5rem;
@@ -24,6 +28,7 @@
       line-height: .5rem;
     }
   }
+
   .item {
     height: 31.25rem;
     color: #fdfeff;
@@ -56,16 +61,19 @@
       letter-spacing: .15px;
     }
   }
+
   .item1 {
     background-image: url("/img_1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+
   .item2 {
     background-image: url("/img_2.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+
   .item3 {
     background-image: url("/img_3.png");
     background-repeat: no-repeat;

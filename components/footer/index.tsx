@@ -4,7 +4,9 @@ import publicLogo from "@/public/public_logo.png";
 import styles from "./styles.module.scss";
 import cName from "classnames";
 import {isEmpty} from "lodash";
+import logoText from "@/public/logo-text.svg";
 import QRCode from "@/public/code.jpg";
+import logoIcon from "@/public/logo-icon.svg";
 interface ILink {
   label: string;
   link?: string;
@@ -26,7 +28,7 @@ const Footer: FC<IFooterProps> = ({}) => {
   const data = {
     "title": "IoTSharp",
     "qr_code": "",
-    "copy_right": "Copyright © 2023 The IoTSharp Authors",
+    "copy_right": "© 2018 - 2023 The IoTSharp Authors. All rights reserved.",
     "site_number": "",
     "public_number": "冀ICP备18039206号",
     "qr_code_image": {
@@ -120,7 +122,10 @@ const Footer: FC<IFooterProps> = ({}) => {
   return (
     <div className={styles.footer}>
       <div className={styles.topArea}>
-        <h1 className={styles.footerTitle}>{title}</h1>
+        <h1 className={styles.footerTitle}>
+          <Image src={logoIcon} alt="" width={35} height={35}/>
+          <Image src={logoText} alt="" width={135} height={40}/>
+        </h1>
         <div className={styles.linkListArea}>
           {footerData?.linkList?.map((item, index) => {
             return (

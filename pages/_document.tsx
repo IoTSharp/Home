@@ -7,13 +7,13 @@ export default function Document() {
     <Html>
       <Head/>
       <body>
-        <Main/>
-        <NextScript/>
-        <Script id="theme-script" strategy="beforeInteractive">
-          {`const item = localStorage.getItem('theme') || 'light';
+      <Main/>
+      <NextScript/>
+      <Script id="theme-script" strategy="beforeInteractive">
+        {`const item = localStorage.getItem('theme') || 'light';
             localStorage.setItem('theme', item);
             document.getElementsByTagName('html')[0].dataset.theme = item;`}
-        </Script>
+      </Script>
       </body>
     </Html>
   );
