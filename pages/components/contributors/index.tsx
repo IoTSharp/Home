@@ -48,7 +48,7 @@ const Contributors: FC<IContributorsProps> = ({}) => {
           {
             Comments?.map((comment, index) => {
               return (
-                <Col span={8} style={{...comment?.style}}>
+                <Col span={8} style={{...comment?.style}} key={index}>
                   <Card
                     footerLine={false}
                     headerLine={false}
