@@ -53,7 +53,7 @@ const Platform: FC<IPlatformProps> = ({}) => {
         {
           Options.map((option, index) => {
             return (
-              <div>
+              <div key={index}>
                 <div className={styles.imgWrapper} style={{backgroundColor: option.background}}>
                   <Image src={option.image as unknown as string} unoptimized={true}
                          priority={true}
