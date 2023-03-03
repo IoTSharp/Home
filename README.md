@@ -8,7 +8,6 @@
  
 ## 如何构建?
 
-```bash
 ```
 npm install
 npm run dev
@@ -18,7 +17,6 @@ npm run dev
 
 ```
 npm run debugger
-```
 ```
  
 ## 感谢
