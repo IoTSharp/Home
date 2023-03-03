@@ -23,4 +23,4 @@ npm run debugger
  
 ## 感谢
   
-  感谢 OweQian( https://github.com/OweQian ) 为项目使用vue构建的首页。 
+  感谢 OweQian( https://github.com/OweQian ) 为项目使用 Nextjs 构建的首页。 
