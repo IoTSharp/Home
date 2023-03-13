@@ -8,30 +8,14 @@ export interface IContributorsProps {
 const Contributors: FC<IContributorsProps> = ({}) => {
   const {Meta} = Card;
   const Comments = [{
-    avatar: 'https://lf3-static.bytednsdoc.com/obj/eden-cn/ptlz_zlp/ljhwZthlaukjlkulzlp/card-meta-avatar-docs-demo.jpg',
-    name: 'Mengzhou',
-    content: '接入简单易上手；API 丰富全面。'
-  }, {
-    avatar: 'https://lf3-static.bytednsdoc.com/obj/eden-cn/ptlz_zlp/ljhwZthlaukjlkulzlp/card-meta-avatar-docs-demo.jpg',
-    name: 'Mengzhou',
-    content: '有很多公司内的其他业务使用，有比较多的样例参考，参考其他业务平台的设计方案，统一平台的交付标准。',
-  }, {
-    avatar: 'https://lf3-static.bytednsdoc.com/obj/eden-cn/ptlz_zlp/ljhwZthlaukjlkulzlp/card-meta-avatar-docs-demo.jpg',
-    name: 'Mengzhou',
-    content: '接入简单易上手；API 丰富全面。'
-  }, {
-    avatar: 'https://lf3-static.bytednsdoc.com/obj/eden-cn/ptlz_zlp/ljhwZthlaukjlkulzlp/card-meta-avatar-docs-demo.jpg',
-    name: 'Mengzhou',
-    content: '接入简单易上手；API 丰富全面。'
-  }, {
-    avatar: 'https://lf3-static.bytednsdoc.com/obj/eden-cn/ptlz_zlp/ljhwZthlaukjlkulzlp/card-meta-avatar-docs-demo.jpg',
-    name: 'Mengzhou',
-    content: 'API 丰富全面。',
+    avatar: 'https://avatars.githubusercontent.com/u/29589505?v=4',
+    name: 'IoTGateway 王海东',
+    content: 'IoTSharp作为dotNet开源物联网平台的独苗，架构设计先进、可扩展性强、协议宽松。是你学习、评估、落地的最佳选择。',
     style: { marginTop: '40px'},
   }, {
     avatar: 'https://lf3-static.bytednsdoc.com/obj/eden-cn/ptlz_zlp/ljhwZthlaukjlkulzlp/card-meta-avatar-docs-demo.jpg',
-    name: 'Mengzhou',
-    content: '接入简单易上手；API 丰富全面。'
+    name: 'ThingsBoard中文网 王磊',
+    content: 'IoTSharp一个开箱即用的开源物联网平台助力企业快速完成IoT数据采集，预警处理及数据可视化，保证项目质量提高项目交付率。'
   }]
   return (
     <div className={styles.contributorsContainer}>
