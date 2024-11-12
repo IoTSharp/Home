@@ -1,8 +1,6 @@
 # IoTSharp 网站首页
 
   
-  https://iotsharp.io 
-  
   https://iotsharp.net
  
  
