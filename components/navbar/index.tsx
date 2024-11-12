@@ -22,7 +22,7 @@ const NavBar: FC<INavBarProps> = ({}) => {
   };
   return (
     <div className={styles.navBar}>
-      <a href="https://iotsharp.io/">
+      <a href="https://iotsharp.net/">
         <Image src={logoIcon} alt="" width={35} height={35}/>
         <Image src={icon} alt="" width={135} height={40}/>
       </a>
@@ -59,7 +59,7 @@ const NavBar: FC<INavBarProps> = ({}) => {
         </div>
       </div>
       <SideSheet title="安装包" visible={visible} onCancel={onChange} placement="right">
-        <p>Here is more content...</p>
+        <p> <a href="https://github.com/IoTSharp/IoTSharp/releases">点这里下载</a></p>
       </SideSheet>
     </div>
   );
